@@ -8,4 +8,4 @@ rule token = parse
 		' '*											{ token lexbuf }
 	|	('#' [^'\n']*)? ('\n'+)		{ ("EOL", "")	}
 	| '\t'											{	("TAB", "")	}
-(* *)
+(* nothing *)
